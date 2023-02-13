@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <header class="boxHeader">
+        <h1>COUTIEZ Odile</h1>
+    </header>
+    <main class="container-fluid boxMain" id="corpsDePage">
+        <section id="sec1">
+            <div>
+                <p id="descNbTache">Nombre de tâche</p>
+                <p id="nbTache">0</p>
+                <button id="supprimer">Tout supprimer</button>
+            </div>
+            <h2>TO DO LIST</h2>
+            <form action="" class="boxForm">
+                <label for="tache">Titre : </label>
+                <input type="text" id="tache" name="tache" />
+                <label for="description">Description : </label>
+                <textarea name="description" id="description"></textarea>
+                <div class="bouton">
+                    <button class="float-right" id="bouton" type="button">valider</button>
+                </div>
+            </form>
+            <div id="afficheLesTaches">
+                <ul id="list"></ul>
+            </div>
+        </section>
+        <section class="pourImg">
+            <div class="choixFond">
+                <p>Choisissez un fond d'écran</p>
+            </div>
+            <div class="baniere">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>CDA Compiègne</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

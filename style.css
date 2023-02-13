@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 2%;
+}
+
+
+/*Pour lcorps de l'application*/
+
+#sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    padding-top: 2%;
+    color: ivory;
+    margin: 1% 0;
+}
+
+
+/* Pour l'affichage des nombre de tâches*/
+
+#nbTache {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#descNbTache {
+    padding-top: 10px;
+    position: absolute;
+    top: 26%;
+    left: 5%;
+}
+
+
+/* Pour ma petite formulaire*/
+
+#supprimer {
+    padding: 0.5rem;
+    border-radius: 5px;
+    padding-top: 10px;
+    position: absolute;
+    top: 37%;
+    left: 5%;
+    background-color: #4189A6;
+    color: ivory;
+}
+
+.boxForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: ivory;
+}
+
+.boxForm button,
+.boxForm textarea {
+    border-radius: 5px;
+    border: none;
+}
+
+.bouton button {
+    padding: 1%;
+    width: 22%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #4189A6;
+    color: ivory;
+}
+
+.bouton button:hover,
+#supprimer:hover {
+    background-color: #85D3F2;
+}
+
+
+/*Pour la balise de l'image*/
+
+.baniere {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Pour la taille de l'image*/
+
+.baniere img {
+    width: 50%;
+    height: 15vh;
+    margin: 1%;
+}
+
+.pourImg {
+    width: 20%;
+    padding-top: 3%;
+}
+
+.choixFond {
+    text-align: center;
+    color: white;
+}
+
+#red {
+    background-color: #85D3F2;
+    border: none;
+}
+
+#blue {
+    background-color: #4189A6;
+    border: none;
+}
+
+#green {
+    background-color: #6E8C03;
+    border: none;
+}
+
+#yellow {
+    background-color: #D9B97E;
+    border: none;
+}
+
+.bout {
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bout input {
+    width: 4rem;
+    margin-right: 0.2rem;
+}
+
+i {
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+/* Pour la balise main*/
+
+.boxMain {
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 3%;
+}
+
+footer {
+    padding: 8px;
+}
+
+footer,
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4189A6;
+    color: ivory;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#afficheLesTaches {
+    width: 100%;
+    padding-right: 30px;
+}
+
+#list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    counter-reset: section;
+}
+
+#list li {
+    list-style: none;
+    text-align: center;
+    width: 50%;
+}
+
+.cked {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    background-color: #4189A6;
+    padding: 1%;
+    width: 100%;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+}
+
+
+/* li:hover::after {
+    content: " (terminer) ";
+    color: rgb(43, 18, 187);
+} */
+
+li::before {
+    content: counter(section, decimal) " -";
+    counter-increment: section;
+    font-weight: bold;
+}
+
+span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
